@@ -9,6 +9,10 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  enrolled_courses: [{ 
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Course",
+  }]
 });
 
 const User = mongoose.model("User", userSchema);
