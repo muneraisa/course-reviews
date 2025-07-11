@@ -2,6 +2,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 const express = require("express");
 const app = express();
+app.use(express.static('public'));
 
 // Middlewares
 const mongoose = require("mongoose"); //databases

@@ -1,10 +1,19 @@
-<h1>Sign In</h1>
-<form action="/auth/sign-in" method="POST">
-  <label for="username">Username</label>
-  <input type="text" name="username" id="username">
-  <br>
-  <label for="password">Password</label>
-  <input type="password" name="password" id="password">
-  <br>
-  <button type="submit">Sign In</button>
-</form>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign in | CourseReviews</title>
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+
+<div class="container text-center mt-5">
+  <h1>Sign In</h1>
+  <form action="/auth/sign-in" method="POST">
+    <label for="username">Username</label>
+    <input type="text" class="input" name="username" id="username" />
+    <br />
+    <label for="password">Password</label>
+    <input type="password" class="input" name="password" id="password" />
+    <br />
+    <button type="submit" class="btn">Sign In</button>
+  </form>
+</div>

@@ -1,23 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auth Application</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CourseReviews</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <h1>Welcome to CourseReviews!</h1>
+        <p class="lead">
+          Explore, rate, and review courses at your university. Share your
+          experience and help others choose wisely.
+        </p>
 
-    <nav>
-    <% if (user) { %>
-      <h1>Welcome to the App! <%= user.username %></h1>
-      <a href="/auth/sign-out">Sign out</a>
-    <% } else { %>
-      <h1>Welcome to the app, guest.</h1>
-      <a href="/auth/sign-up">Sign up</a>
-      <a href="/auth/sign-in">Sign in</a>
-    <% } %>
-      <a href="/vip-lounge">Get into the VIP users only lounge!</a>
-  </nav>
-    
-</body>
+        <% if (!user) { %>
+        <a href="/auth/sign-in" class="btn">Sign In</a>
+        <a href="/auth/sign-up" class="btn">Create Account</a>
+        <% } else { %>
+        <a href="/courses" class="btn">Browse Courses</a>
+        <a href="/auth/sign-out" class="btn">Sign Out</a>
+        <% } %>
+      </div>
+    </header>
+    <div class="courses">
+      <div class="card">
+        <div class="card-image">
+          <img src="/images/ai.jpg" alt="AI" />
+        </div>
+        <div class="card-content">
+          <h3>Intro to AI</h3>
+          <p>
+            Learn the fundamentals of artificial intelligence, including machine
+            learning, neural networks, and real-world applications.
+          </p>
+          <a href="/courses/1/review" class="btn"> Review</a>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
