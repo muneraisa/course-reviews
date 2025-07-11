@@ -2,7 +2,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 const express = require("express");
 const app = express();
-app.use(express.static('public'));
+app.use(express.static("public"));
 
 // Middlewares
 const mongoose = require("mongoose"); //databases
@@ -11,8 +11,8 @@ const morgan = require("morgan"); // logs
 const session = require("express-session"); //authentication
 
 //these middlewares are required for the auth
-const passUserToView = require('./middleware/pass-user-to-view');
-const isSignedIn = require('./middleware/is-signed-in');
+const passUserToView = require("./middleware/pass-user-to-view");
+const isSignedIn = require("./middleware/is-signed-in");
 
 // Set the port from environment variable or default to 3000
 const port = process.env.PORT ? process.env.PORT : "3000";
@@ -28,7 +28,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride("_method"));
 
 // Morgan for logging HTTP requests
-app.use(morgan('dev'));
+app.use(morgan("dev"));
 
 // Session Configurations
 app.use(
@@ -38,16 +38,16 @@ app.use(
     saveUninitialized: true,
   })
 );
-app.use(passUserToView); 
+app.use(passUserToView);
 
-// GET
-app.get("/", async(req, res) => {
-  res.render("index.ejs");
-});
+
 
 // Require Controller
 const authController = require("./controllers/auth");
 app.use("/auth", authController);
+
+const courseController = require("./controllers/course");
+app.use("/", courseController);
 
 // Route - Just for testing purpose
 // VIP-lounge
