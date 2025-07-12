@@ -6,7 +6,7 @@ A full-stack Node.js application that allows users to browse courses and add rev
 
 ## 🚀 Live Demo
 
-[Click here to view the live app](https://your-app-name.onrender.com)
+[Click here to view the live app](https://course-reviews-z2m9.onrender.com/)
 
 ## ✨ Features
 
