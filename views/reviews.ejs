@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CourseReviews |</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <h1>CourseReviews</h1>
+        <p class="lead"><%= course.title %> Reviews</p>
+        <a href="/" class="btn"><i class="bi bi-arrow-return-left"></i></a>
+      </div>
+    </header>
+    <div class="reviews">
+      <% if (reviews.length === 0) { %>
+      <div class="card">
+        <div class="card-content">
+          <h4>No reviews yet!</h4>
+        </div>
+      </div>
+      <% } else { %> <% reviews.forEach(review => { %>
+      <div class="card">
+        <div class="card-content">
+          <h3><%= review.review %></h3>
+          <h4><%= review.user.username %><br /></h4>
+        </div>
+      </div>
+      <% }) %> <% } %>
+    </div>
+  </body>
+</html>

@@ -40,8 +40,6 @@ app.use(
 );
 app.use(passUserToView);
 
-
-
 // Require Controller
 const authController = require("./controllers/auth");
 app.use("/auth", authController);
@@ -49,11 +47,15 @@ app.use("/auth", authController);
 const courseController = require("./controllers/course");
 app.use("/", courseController);
 
+const reviewController = require("./controllers/review");
+app.use("/", reviewController);
+
 // Route - Just for testing purpose
 // VIP-lounge
-app.get("/vip-lounge", isSignedIn, (req, res) => {
-  res.send(`Welcome to the party`);
+app.get("/review", isSignedIn, (req, res) => {
+  res.send("/review");
 });
+
 app.listen(port, () => {
   console.log(`The express app is ready on port ${port}!`);
 });
