@@ -4,6 +4,10 @@
 
 A full-stack Node.js application that allows users to browse courses and add reviews. Built using Express, MongoDB, Mongoose, EJS, and custom authentication logic.
 
+## 🚀 Live Demo
+
+[Click here to view the live app](https://your-app-name.onrender.com)
+
 ## ✨ Features
 
 - 📝 List of courses with title, instructor, description, and images
