@@ -22,3 +22,24 @@ A full-stack Node.js application that allows users to browse courses and add rev
 - Express-session (for login session management)
 
 ## 📁 Project Structure
+course-reviews/
+├── controllers/
+│ ├── course.js
+│ └── review.js
+├── models/
+│ ├── course.js
+│ ├── review.js
+│ └── user.js
+├── public/
+│ └── stylesheets/
+│ └── style.css
+│ └── images/
+├── views/
+│ ├── index.ejs
+│ ├── reviews.ejs
+│ ├── add-review.ejs
+│ ├── edit-review.ejs
+├── middleware/
+│ └── is-signed-in.js
+├── server.js
+└── README.md
