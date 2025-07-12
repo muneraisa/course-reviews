@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Edit Review | <%= review.course.title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <h1>CourseReviews</h1>
+        <p class="lead">Edit Your Review for "<%= review.course.title %>"</p>
+        <a href="/courses/<%= review.course._id %>/review" class="btn">Back</a>
+      </div>
+    </header>
+
+    <div class="container">
+      <form action="/reviews/<%= review._id %>/edit" method="POST">
+        <textarea name="review" rows="5" required>
+<%= review.review %></textarea
+        >
+        <br />
+        <button type="submit" class="btn">Update Review</button>
+      </form>
+    </div>
+  </body>
+</html>

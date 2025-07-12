@@ -9,18 +9,19 @@
   <body>
     <header class="header">
       <div class="header-container">
-        <h1>Welcome to CourseReviews!</h1>
+        <% if (user) { %>
+        <h1>CourseReviews</h1>
+        <h2>Welcome to the App! <%= user.username %><br /></h2>
+        <a href="/auth/sign-out" class="btn">Sign out</a>
+        <% } else { %>
+        <h1>CourseReviews</h1>
         <p class="lead">
           Explore, rate, and review courses at your university. Share your
           experience and help others choose wisely.
         </p>
-
-        <% if (!user) { %>
-        <a href="/auth/sign-in" class="btn">Sign In</a>
-        <a href="/auth/sign-up" class="btn">Create Account</a>
-        <% } else { %>
-        <a href="/courses" class="btn">Browse Courses</a>
-        <a href="/auth/sign-out" class="btn">Sign Out</a>
+        <p class="lead">View the course reviews and write your own now!</p>
+        <a href="/auth/sign-up" class="btn">Sign up</a>
+        <a href="/auth/sign-in" class="btn">Sign in</a>
         <% } %>
       </div>
     </header>

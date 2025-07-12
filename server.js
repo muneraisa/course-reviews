@@ -48,13 +48,7 @@ const courseController = require("./controllers/course");
 app.use("/", courseController);
 
 const reviewController = require("./controllers/review");
-app.use("/", reviewController);
-
-// Route - Just for testing purpose
-// VIP-lounge
-app.get("/review", isSignedIn, (req, res) => {
-  res.send("/review");
-});
+app.use("/", isSignedIn, reviewController);
 
 app.listen(port, () => {
   console.log(`The express app is ready on port ${port}!`);
