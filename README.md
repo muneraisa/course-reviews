@@ -25,6 +25,17 @@ A full-stack Node.js application that allows users to browse courses and add rev
 - EJS (Embedded JavaScript Templating)
 - Express-session (for login session management)
 
+## 🔗 Project Resources
+
+- 📋 **Trello Board** (Project Management):  
+  [https://trello.com/b/your-board-id](https://trello.com/b/your-board-id)
+
+- 🎨 **Figma Design** (UI/UX):  
+  [https://www.figma.com/file/your-design-id](https://www.figma.com/file/your-design-id)
+
+- 🧠 **ERD Diagram (Lucidchart)**:  
+  [https://lucid.app/lucidchart/your-erd-link](https://lucid.app/lucidchart/your-erd-link)
+
 ## 📁 Project Structure
 
 ```bash
