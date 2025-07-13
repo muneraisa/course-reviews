@@ -28,13 +28,13 @@ A full-stack Node.js application that allows users to browse courses and add rev
 ## 🔗 Project Resources
 
 - 📋 **Trello Board** (Project Management):  
-  [https://trello.com/b/your-board-id](https://trello.com/b/your-board-id)
+  [Board](https://trello.com/b/SvJZw9hY/course-reviews-ga)
 
 - 🎨 **Figma Design** (UI/UX):  
-  [https://www.figma.com/file/your-design-id](https://www.figma.com/file/your-design-id)
+  [Design](https://www.figma.com/design/tciQOMYKZr1OVecsBzkIzm/CourseReviews-GAU2?node-id=0-1&t=9QnkWKoGJaR2inGe-1)
 
 - 🧠 **ERD Diagram (Lucidchart)**:  
-  [https://lucid.app/lucidchart/your-erd-link](https://lucid.app/lucidchart/your-erd-link)
+  [ERD](https://lucid.app/lucidchart/cf667b30-f018-469b-9e95-1f8594f11fed/edit?viewport_loc=68%2C-76%2C2028%2C939%2C0_0&invitationId=inv_55cb0ea8-e24f-4d69-b1b3-919398d5dd65)
 
 ## 📁 Project Structure
 
